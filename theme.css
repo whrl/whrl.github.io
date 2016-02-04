@@ -1,5 +1,5 @@
 <!--/*--><![CDATA[/*><!--*/
-  .title  { font-size: large; }
+  .title  { font-size: large; font-weight: normal;}
   .todo   { font-family: monospace; color: red; }
   .done   { font-family: monospace; color: green; }
   .priority { font-family: monospace; color: orange; }
