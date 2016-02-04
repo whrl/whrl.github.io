@@ -1,6 +1,5 @@
 <!--/*--><![CDATA[/*><!--*/
-  .title  { font-size: medium; }
-
+  .title  { font-size: large; }
   .todo   { font-family: monospace; color: red; }
   .done   { font-family: monospace; color: green; }
   .priority { font-family: monospace; color: orange; }
@@ -12,8 +11,8 @@
   .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
   .org-center { margin-left: auto; margin-right: auto; text-align: center; }
   .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
+  #postamble p, #preamble p { font-size: 90%;}
+  p.verse { margin-left: 1%; }
   pre {
     padding: 8pt;
     font-family: monospace;
