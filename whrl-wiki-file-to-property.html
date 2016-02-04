@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>whrl-wiki-file-to-property</title>
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="T. Wöhrl" />
+</head>
+<body>
+<div id="org-div-home-and-up">
+<a accesskey="H" href="index.html"> HOME </a>
+</div><div id="content">
+<h1 class="title">whrl-wiki-file-to-property</h1>
+<p>
+Updated: <span class="timestamp-wrapper"><span class="timestamp">[2016-02-04]</span></span>
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><a id="ID-8537be0b-2767-446d-a1e9-93cf622b897d" name="ID-8537be0b-2767-446d-a1e9-93cf622b897d"></a>Wiki word to property</h2>
+<div class="outline-text-2" id="text-1">
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(<span style="color: #00bfff;">defun</span> <span style="color: #daa520;">whrl-wiki-file-to-property</span> (wiki-link)
+  <span style="color: #7f7f7f;">;; </span><span style="color: #7f7f7f;">Ask for wiki-word and set it as an org property &lt;2016-02-04 Do&gt;  </span>
+  (interactive (list
+     (read-string <span style="color: #deb887;">"wiki-link: "</span> 
+                  (file-name-base                       <span style="color: #7f7f7f;">;; </span><span style="color: #7f7f7f;">only file base name without dir</span>
+                   (read-file-name <span style="color: #deb887;">"Enter wiki file: "</span> 
+                                   (concat <span style="color: #deb887;">"~/wiki/"</span> (org-entry-get (point) <span style="color: #deb887;">"WIKI"</span>)) <span style="color: #7f7f7f;">;; </span><span style="color: #7f7f7f;">Suggest existing value of WIKI property </span>
+                                   ))))
+               )
+  (org-entry-put (point) <span style="color: #deb887;">"WIKI"</span>  wiki-link) <span style="color: #7f7f7f;">;; </span><span style="color: #7f7f7f;">update value of WIKI property</span>
+  )
+</pre>
+</div>
+
+<p>
+
+</p>
+<hr  />
+<p>
+<a href="index.html">HOME</a> <a href="impressum.html">Impressum</a> <a href="disclaimer.html">Disclaimer</a>: Without any warranty. I cannot make sure the information here is correct. <br  />
+T. Wöhrl
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<script type="text/javascript">
+  (function() {
+    var cx = '015189740857710454618:0rgvqxsfpla';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-72776476-1', 'auto');
+  ga('send', 'pageview');
+</script><gcse:searchbox-only></gcse:searchbox-only>
+</div>
+</body>
+</html>
