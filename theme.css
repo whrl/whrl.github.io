@@ -1,5 +1,5 @@
 <!--/*--><![CDATA[/*><!--*/
-  .title  { font-size: large; font-weight: normal;}
+  .title  { font-size: large; font-weight: bold;}
   .todo   { font-family: monospace; color: red; }
   .done   { font-family: monospace; color: green; }
   .priority { font-family: monospace; color: orange; }
@@ -61,5 +61,23 @@
     margin: 10px;
     background: #ffffcc;
   }
-
+h2 {
+    font-size: 100%;
+font-weight: bold;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+h3 {
+    font-size: 100%;
+font-weight: bold;
+margin-top: 0px;
+margin-bottom: 0px;
+padding-left: 0px;
+}
+ul {
+    font-size: 100%;
+font-weight: normal;
+margin-top: 0px;
+margin-bottom: 0px;
+}
   /*]]>*/-->
