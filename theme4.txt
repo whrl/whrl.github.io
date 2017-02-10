@@ -46,9 +46,12 @@ font-size: 1em;
     padding-left: 2px; 
 }
 
-
-
-
+pre {
+    margin-left: 3em;
+    border-left: 2px solid #767676;
+    padding: 1em 0em 1em 1em;
+    font-size: 1.2em;
+}
 #postamble a {
     color: #525E9A;
 }
@@ -64,10 +67,13 @@ body {
     font-size: 0.8em;
     min-width: 800px;
     max-width: 1000px;
-    margin-left: 210px;    
+    margin-left: 300px;    
    // margin:auto;    
 }
-
+code {
+    background: #EDEDED;
+    font-size: 1.2em;
+}
 
 p, li {
     max-width: 59em;
@@ -80,29 +86,10 @@ span.todo, span.done {
     padding: 3px;
     color: white;
 }
+span.todo { background: #dd0000; }
+span.done { background: #00dd00; }
+blockquote { background: #dddddd; padding: .5em 1em .5em 1em;}
+pre, pre *  { color: black !important; }
 
-pre.src {
-    position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
-padding-left: 0em;
-background-color: #eff0f1;
-  }
-pre.src:before {
-    position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
-  }
-  pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-matlab:before  { content: 'MATLAB'; }
-.src,.example{margin:0;padding:1em;font-size:1em;line-height:1.5em;
-}
 
 /*]]>*/-->

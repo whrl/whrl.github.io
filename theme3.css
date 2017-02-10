@@ -23,6 +23,12 @@
     overflow: visible;
     padding-top: 1.2em;
   }
+pre {
+    margin-left: 3em;
+    border-left: 2px solid #767676;
+    padding: 1em 0em 1em 1em;
+    font-size: 1.2em;
+}
   pre.src:before {
     position: absolute;
     background-color: white;
