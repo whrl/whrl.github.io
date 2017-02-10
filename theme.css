@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+font-size: small;
 }
 
 ol li{margin-left: 0em;
@@ -40,7 +41,6 @@ position: fixed;
 
 h1.title {
   position:fixed;
-  font-size: 1em;
   top: 1.5em;
   left:2px;
   width: 200px;
@@ -60,7 +60,8 @@ overflow: auto;
 }
 
 #table-of-contents h2{
-font-size: 1em;
+font-size: small;
+font-weight: normal;
 }
 
 #table-of-contents li{
