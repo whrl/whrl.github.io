@@ -62,10 +62,8 @@ overflow: auto;
 font-size: 1em;
 }
 
-#table-of-contents ul {
-    padding: 0;
-    margin: 0;
-    padding-left: 0px;  
+#table-of-contents li{
+list-style-position: outside;
 }
 
 
