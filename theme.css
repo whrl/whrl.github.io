@@ -32,21 +32,23 @@ h1.title {
 
 #table-of-contents {
 position: fixed;
-    left:2px;top:2em;
+    left:2px;top:3em;
     width:200px;  
 }
 
+#table-of-contents h2{
+font-size: 1em;
+}
 
 #table-of-contents ul {
     padding: 0;
     margin: 0;
-    padding-left: 10px;    
+    padding-left: 2px; 
 }
 
 pre {
     margin-left: 3em;
     border-left: 2px solid #767676;
-    background: #F1F1F1;
     padding: 1em 0em 1em 1em;
     font-size: 1.2em;
 }
