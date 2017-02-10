@@ -23,6 +23,9 @@ h3 {margin-bottom: 0.5em;
 margin-top: 0.5em;
 }
 
+th, td {
+    padding-right: 1em;
+}
 /* old top menu */
 /*
 #table-of-contents {
