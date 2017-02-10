@@ -2,22 +2,23 @@
 
 * {
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
 ol li{margin-left: 0em;
 list-style-position: inside;
+padding-left: 1em;
 }
-
 ul li{margin-left: 0em;
 list-style-position: inside;
+padding-left: 1em;
 }
 
-h2 {margin-bottom: 10px;
-margin-top: 10px;
+h2 {margin-bottom: 0.5em;
+margin-top: 0.5em;
 }
-h3 {margin-bottom: 10px;
-margin-top: 10px;
+h3 {margin-bottom: 0.5em;
+margin-top: 0.5em;
 }
 
 /* old top menu */
@@ -64,6 +65,7 @@ font-size: 1em;
 
 #table-of-contents li{
 list-style-position: outside;
+padding-left: 0;
 }
 
 
