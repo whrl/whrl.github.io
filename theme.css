@@ -25,20 +25,15 @@ h1.title {
   position:fixed;
   font-size: 1.5em;
   top: 0.2em;
-  width:300px;
+  width:200px;
   left:2px;
 }
 
-#postamble {
-position: fixed;
-    left:2px;bottom:2em;
-    width:280px;  
-}
 
 #table-of-contents {
 position: fixed;
     left:2px;top:2em;
-    width:300px;  
+    width:200px;  
 }
 
 
