@@ -27,7 +27,9 @@ h1.title {
   top: 1em;
   left:2px;
   width: 200px;
+  height: 4em;
   margin: 0px;
+  overflow: auto;
   background-color: white;
 }
 
@@ -35,7 +37,8 @@ h1.title {
 #table-of-contents {
 position: fixed;
     left:2px;
-   bottom:2px;
+   top:5em;
+   bottom:0px;
     width:200px; 
 overflow: auto;
 }
