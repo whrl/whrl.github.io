@@ -33,7 +33,9 @@ h1.title {
 #table-of-contents {
 position: fixed;
     left:2px;top:3em;
-    width:200px;  
+    width:200px; 
+    height:600px;
+overflow: auto;
 }
 
 #table-of-contents h2{
@@ -43,7 +45,7 @@ font-size: 1em;
 #table-of-contents ul {
     padding: 0;
     margin: 0;
-    padding-left: 2px; 
+    padding-left: 2px;  
 }
 
 
