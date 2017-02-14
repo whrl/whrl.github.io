@@ -7,5 +7,6 @@ Hello World. This is my website.
 
 post:~/Dropbox/lib/oneliners/oneliners.org
 
+post:~/Dropbox/notes/deutsch-mandarin.org
 
 
