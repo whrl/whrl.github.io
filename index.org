@@ -4,9 +4,6 @@
 
 Hello World. This is my website.
 
-
-post:~/Dropbox/lib/oneliners/oneliners.org
-
-post:~/Dropbox/notes/deutsch-mandarin.org
-
-
+So far there are random notes on
+ - Oneliners post:~/Dropbox/lib/oneliners/oneliners.org and
+ - Chinesischlernnotizen post:~/Dropbox/notes/deutsch-mandarin.org
