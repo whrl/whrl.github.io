@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>oneliners</title>
-<!-- 2017-02-14 Tue 13:53 -->
+<!-- 2017-02-14 Tue 14:17 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">ol li{list-style-type:none}</style>
@@ -171,6 +171,15 @@
 
 <pre class="src src-sh">date <span style="color: #deb887;">'+%Y%m%d'</span> | tr -d <span style="color: #deb887;">"\n"</span> | xsel -i -b;
 /media/tw/d/Dropbox/bash/insertTimestamp.sh | xsel -o
+</pre>
+</div>
+</div>
+</li>
+<li><a id="sec-1-5-3" name="sec-1-5-3"></a>Tidy html utf8<br  /><div class="outline-text-4" id="text-1-5-3">
+
+<div class="org-src-container">
+
+<pre class="src src-sh">tidy -utf8 &lt;input.html&gt; &gt; &lt;output.html&gt;
 </pre>
 </div>
 </div>
