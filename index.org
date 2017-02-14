@@ -3,7 +3,7 @@
 #+DATE: {{{modification-time( %Y-%m-%d)}}}
 #+BIBLIOGRAPHY: C:/Users/tw/Dropbox/lib/ref/ref.bib
 # #+OPTIONS: html-postamble:nil 
-#+BIND: org-html-postamble "<hr><a href=\"/index.html\">Home</a> <a href=\"/sitemap.xml\">Sitemap</a> <a href=\"http://validator.w3.org/check?uri=referer\">Validate</a> <a href=\"/impressum.html\">Impressum</a> <a href=\"/disclaimer.html\">Disclaimer</a> Without any warranty. Some Rights Reserved. Last updated %d by %a. <script type=\"text/javascript\" src=\"/goo1.js\"></script>"
+#+BIND: org-html-postamble "<hr><a href=\"/index.html\">Home</a> <a href=\"/sitemap.xml\">Sitemap</a> <a href=\"http://validator.w3.org/check?uri=referer\">Validate</a> <a href=\"/impressum.html\">Impressum</a> <a href=\"/disclaimer.html\">Disclaimer</a> Without any warranty. Some Rights Reserved. Last updated %d by %a. <script type=\"text/javascript\" src=\"goo1.js\"></script>"
 
 Hello World. This is my website.
 
