@@ -10,30 +10,30 @@
   .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
   .center { margin-left: auto; margin-right: auto; text-align: center; }
   .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  #postamble p, #preamble p { margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
+      border: 1px solid #ccc;
+      box-shadow: 3px 3px 3px #eee;
+      padding: 8pt;
+      font-family: monospace;
+      overflow: auto;
+      margin: 1.2em;
   }
   pre.src {
-    position: relative;
-  //  overflow: visible;
-    padding-top: 1.2em;
+      position: relative;
+      //  overflow: visible;
+      padding-top: 1.2em;
   }
   pre.src:before {
-    display: none;
-    position: absolute;
-    background-color: white;
- //   top: -10px;
-    top: 2px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
+      display: none;
+      position: absolute;
+      background-color: white;
+      //   top: -10px;
+      top: 2px;
+      right: 10px;
+      padding: 3px;
+      border: 1px solid black;
   }
   pre.src:hover:before { display: inline;}
   pre.src-sh:before    { content: 'sh'; }
@@ -59,21 +59,21 @@
   .figure { padding: 1em; }
   .figure p { text-align: center; }
   .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
+      padding: 10px;
+      border: 2px solid gray;
+      margin: 10px;
+      background: #ffffcc;
   }
   #org-div-home-and-up
-   { text-align: left; font-size: 100%; white-space: nowrap; }
+  { text-align: left; font-size: 100%; white-space: nowrap; }
   textarea { overflow-x: auto; }
   .linenr { font-size: smaller }
   .code-highlighted { background-color: #ffff00; }
   .org-info-js_info-navigation { border-style: none; }
   #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  { background-color: #ffff00; color: #000000; font-weight: bold; }
 
 
   /*]]>*/-->
