@@ -19,9 +19,11 @@
             var arrayImg = new Array();
 
 	    arrayImg[0] = "hallihallo_01.jpg";
+            arrayImg[1] = "hallihallo_02.jpg";
 	    
             var arrayAlt = new Array();
 	    arrayAlt[0] = "Carpenter Bee, Kukup 2014";
+            arrayAlt[1] = "Travertine pools, Biosphere Reserve Huanglon 2015";
 
 	    getRandomImage(arrayImg, "", arrayAlt);
 	    
