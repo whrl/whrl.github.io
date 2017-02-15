@@ -55,7 +55,8 @@ cc.initialise({
       //  necessary: {}
     },
     settings: {
-        consenttype: "implicit"
+//        consenttype: "implicit"
+style: "cc-light"
     }
 });
 // ]]>
