@@ -42,25 +42,11 @@ var arrayImg = [{
   <br/>
   <br/>
   <br/><div style="font-size:smaller;"><a href="javascript:myWindow('http://validator.w3.org/check?uri=referer', 'Validation')">Validate</a> <a href="javascript:myWindow('http://whrl.github.io/impressum.html', 'Impressum')">Impressum</a> <a href="javascript:myWindow('disclaimer.html#sec-2','Haftungsausschluss')">Haftungsausschluss</a> <a href="javascript:myWindow('disclaimer.html','Disclaimer')">Disclaimer</a></div></div>
-<link rel="stylesheet" type="text/css" href="cookieconsent.css"/>
-<script type="text/javascript" src="cookieconsent.js"></script>
 
-<script type="text/javascript">
-// <![CDATA[
-cc.initialise({
-    cookies: {
-      //  social: {},
-        analytics: {},
-      //  advertising: {},
-      //  necessary: {}
-    },
-    settings: {
-//        consenttype: "implicit"
-style: "cc-light"
-    }
-});
-// ]]>
-</script>
+<link rel="stylesheet" type="text/css" href="cookieconsent.min.css" />
+        <script src="cookieconsent.min.js"></script>
+        <script>window.cookieconsent.initialise({"palette":{"popup":{"background":"#237afc"},"button":{"background": "transparent","border":"#fff","text":"#fff"}}});</script>
+
 #+end_html 
 
 * noexport :noexport:
