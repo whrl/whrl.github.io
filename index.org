@@ -45,7 +45,7 @@
   <a href="/toni.html" style="font-size:large">ENTER</a>
   <br/>
   <br/>
-  <br/><div style="font-size:smaller;"><a href="javascript:myWindow('http://validator.w3.org/check?uri=referer', 'Validation')">Validate</a> <a href="javascript:myWindow('http://whrl.github.io/impressum.html', 'Impressum')">Impressum</a> <a href="javascript:myWindow('disclaimer.htm','Haftungsausschluss')">Haftungsausschluss</a> <a href="javascript:myWindow('dedisclaimer.htm','Disclaimer')">Disclaimer</a></div></div>
+  <br/><div style="font-size:smaller;"><a href="javascript:myWindow('http://validator.w3.org/check?uri=referer', 'Validation')">Validate</a> <a href="javascript:myWindow('http://whrl.github.io/impressum.html', 'Impressum')">Impressum</a> <a href="javascript:myWindow('disclaimer.html','Haftungsausschluss')">Haftungsausschluss</a> <a href="javascript:myWindow('disclaimer.html#sec-2','Disclaimer')">Disclaimer</a></div></div>
 #+end_html 
 
 * noexport :noexport:
