@@ -9,11 +9,11 @@
 # #+HTML_HEAD: <style type="text/css">div.intro {position: absolute;top: 50%; transform: translate(0, -50%);left: 50%;transform: translate(-50%, -50%);text-align: center;font-size: 1em};div.img {width: 50%;height: auto;border: 1px solid #ccc;}div.img img {width: 30%;height: auto;}</style>
 
 #+begin_html
-<SCRIPT LANGUAGE="JavaScript"><!--
+<script type="text/javascript"><!--
   function myWindow(url,name) {
       window.open(url,name,'width=400,height=400,location=no,menubar=no,scrollbars=yes,status=no,toolbar=no,resizable=yes');
   }
-  //--></SCRIPT>
+  //--></script>
 <div style="text-align:center;">
       <script type="text/javascript">
 	<!--
@@ -44,8 +44,7 @@
   <br/>
   <a href="/toni.html">ENTER</a>
   <br/>
-  <br/><i><font size="-0.5">
-  <a href="javascript:myWindow('http://validator.w3.org/check?uri=referer', 'Validation')">Validate</a> <a href="javascript:myWindow('http://whrl.github.io/impressum.html', 'Impressum')">Impressum</a> <a href="javascript:myWindow('http://whrl.github.io/disclaimer.html','Disclaimer')">Disclaimer</a></font></i></div>
+  <br/><div style="font-size:smaller;"><a href="javascript:myWindow('http://validator.w3.org/check?uri=referer', 'Validation')">Validate</a> <a href="javascript:myWindow('http://whrl.github.io/impressum.html', 'Impressum')">Impressum</a> <a href="javascript:myWindow('http://whrl.github.io/disclaimer.html','Disclaimer')">Disclaimer</a></div></div>
 #+end_html 
 
 * noexport :noexport:
