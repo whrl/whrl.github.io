@@ -32,7 +32,7 @@
             var num = Math.floor( Math.random() * imgAr.length );
 	    var img = imgAr[ num ];
             var alt = imgAlt[num];
-	    var imgStr = '<img width="640px" src="' + path + img + '" alt = "Hallo" style="padding:0px;"></a></td></tr><tr><td class="caption" style="text-align:right; font-size:10pt; font-style:italic;">' + alt + '</td></tr>';
+	    var imgStr = '<img src="' + path + img + '" alt = "Hallo" style="width:100%;max-width:400px;"></a></td></tr><tr><td class="caption" style="text-align:right; font-size:10pt; font-style:italic;">' + alt + '</td></tr>';
 	    document.write(imgStr); document.close();
 	    }
 	    //-->
