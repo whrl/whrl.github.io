@@ -56,7 +56,6 @@ cc.initialise({
     },
     settings: {
         consenttype: "implicit"
-        bannerPosition: "bottom"
     }
 });
 // ]]>
