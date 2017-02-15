@@ -32,7 +32,7 @@ var arrayImg = [{
             var num = Math.floor( Math.random() * imgAr.length );
 	    var img = imgAr[ num ].src;
             var alt = imgAr[ num ].title;
-	    var imgStr = '<table id="image" style="margin-left:auto; margin-right:auto;overflow: auto;"><tr><td><a href="http://whrl.github.io/toni.html" style="text-decoration: none;"><img src="' + path + img + '" alt = "" style="width:100%;max-width:400px;"></a></td></tr><tr><td class="caption" style="text-align:right; font-size:smaller; font-style:italic;>' + alt + '</td></tr></table>';
+	    var imgStr = '<table id="image" style="margin-left:auto; margin-right:auto;overflow: auto;"><tr><td><a href="http://whrl.github.io/toni.html" style="text-decoration: none;"><img src="' + path + img + '" alt = "" style="width:100%;max-width:400px;"></a></td></tr><tr><td class="caption" style="text-align:right; font-size:smaller; font-style:italic;">' + alt + '</td></tr></table>';
 	    document.write(imgStr); document.close();
 	    }
 	    //-->
@@ -42,7 +42,7 @@ var arrayImg = [{
   <a href="/toni.html" style="font-size:large">ENTER</a>
   <br/>
   <br/>
-  <br/><div style="font-size:smaller;"><a href="javascript:myWindow('http://validator.w3.org/check?uri=referer', 'Validation')">Validate</a> <a href="javascript:myWindow('http://whrl.github.io/impressum.html', 'Impressum')">Impressum</a> <a href="javascript:myWindow('disclaimer.html','Haftungsausschluss')">Haftungsausschluss</a> <a href="javascript:myWindow('disclaimer.html#sec-2','Disclaimer')">Disclaimer</a></div></div>
+  <br/><div style="font-size:smaller;"><a href="javascript:myWindow('http://validator.w3.org/check?uri=referer', 'Validation')">Validate</a> <a href="javascript:myWindow('http://whrl.github.io/impressum.html', 'Impressum')">Impressum</a> <a href="javascript:myWindow('disclaimer.html#sec-2','Haftungsausschluss')">Haftungsausschluss</a> <a href="javascript:myWindow('disclaimer.html','Disclaimer')">Disclaimer</a></div></div>
 #+end_html 
 
 * noexport :noexport:
