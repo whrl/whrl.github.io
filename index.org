@@ -5,14 +5,53 @@
 # #+OPTIONS: html-postamble:nil 
 #+BIND: org-html-home/up-format ""
 #+BIND: org-html-postamble ""
-#+HTML_HEAD: <style type="text/css">DIV.intro {position: absolute;top: 50%; transform: translate(0, -50%);left: 50%;transform: translate(-50%, -50%)  }</style>
+
+# #+HTML_HEAD: <style type="text/css">div.intro {position: absolute;top: 50%; transform: translate(0, -50%);left: 50%;transform: translate(-50%, -50%);text-align: center;font-size: 1em};div.img {width: 50%;height: auto;border: 1px solid #ccc;}div.img img {width: 30%;height: auto;}</style>
 
 #+begin_html
+<div align="center" class="intro">
+ <table id="image">
+ <tr><td>
+    <a href="http://whrl.github.io/toni.html" style="text-decoration: none">
+      <script type="text/javascript">
+	<!--
+
+            var arrayImg = new Array();
+
+	    arrayImg[0] = "hallihallo_01.jpg";
+	    
+            var arrayAlt = new Array();
+	    arrayAlt[0] = "Carpenter Bee, Kukup 2014";
+
+	    getRandomImage(arrayImg, "", arrayAlt);
+	    
+	    function getRandomImage(imgAr, path, imgAlt) {
+	    path = path || './img/'; // default path here
+            var num = Math.floor( Math.random() * imgAr.length );
+	    var img = imgAr[ num ];
+            var alt = imgAlt[num];
+	    var imgStr = '<img width="640px" src="' + path + img + '" alt = "Hallo" style="padding:0px;"></a></td></tr><tr><td class="caption" style="text-align:right; font-size:10pt; font-style:italic;">' + alt + '</td></tr>';
+	    document.write(imgStr); document.close();
+	    }
+	    //-->
+      </script>
+    
+</table>
+  <br>
+  <br>
+  <a href=\"/toni.html\">ENTER</a>
+  <br>
+  <br>
+  <a href=\"http://validator.w3.org/check?uri=referer\">Validate</a> <a href=\"/impressum.html\">Impressum</a> <a href=\"/disclaimer.html\">Disclaimer</a></div>
+#+end_html 
+
+* noexport :noexport:
+#+begin_html
+<P ALIGN="CENTER"><A HREF="http://whrl.github.io/toni.html">
 <script type="text/javascript">
 <!--
 var arrayImg = new Array();
 arrayImg[0] = "hallihallo_01.jpg";
-arrayImg[1] = "hallihallo_02.jpg";
 
 getRandomImage(arrayImg, "");
 
@@ -20,9 +59,10 @@ function getRandomImage(imgAr, path) {
     path = path || './img/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<DIV class="intro"><img width=400 src="' + path + img + '" alt = ""><div align="center"> <a href=\"/sitemap.xml\">Sitemap</a> <a href=\"http://validator.w3.org/check?uri=referer\">Validate</a> <a href=\"/impressum.html\">Impressum</a> <a href=\"/disclaimer.html\">Disclaimer</a></DIV></div>';
+    var imgStr = '<DIV class="intro"><img width=400 src="' + path + img + '" alt = ""><div align="center"><br><a href=\"/toni.html\">ENTER</a><br> <br> <a href=\"http://validator.w3.org/check?uri=referer\">Validate</a> <a href=\"/impressum.html\">Impressum</a> <a href=\"/disclaimer.html\">Disclaimer</a></DIV></div>';
     document.write(imgStr); document.close();
 }
 //-->
 </script>
+</p>
 #+end_html
