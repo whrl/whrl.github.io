@@ -12,7 +12,6 @@
 <!--
 var arrayImg = new Array();
 arrayImg[0] = "hallihallo_01.jpg";
-arrayImg[1] = "hallihallo_02.jpg";
 
 getRandomImage(arrayImg, "");
 
