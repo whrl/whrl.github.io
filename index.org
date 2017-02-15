@@ -5,6 +5,7 @@
 # #+OPTIONS: html-postamble:nil 
 #+BIND: org-html-home/up-format ""
 #+BIND: org-html-postamble ""
+#+BIND: org-html-postamble "<script type=\"text/javascript\">(function() {var cx = '015189740857710454618:i3qtwm5bgwq';var gcse = document.createElement('script');gcse.type = 'text/javascript';gcse.async = true;gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//cse.google.com/cse.js?cx=' + cx;var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse, s);})();(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-73306628-1', 'auto');ga('send', 'pageview');</script>"
 
 # #+HTML_HEAD: <style type="text/css">div.intro {position: absolute;top: 50%; transform: translate(0, -50%);left: 50%;transform: translate(-50%, -50%);text-align: center;font-size: 1em};div.img {width: 50%;height: auto;border: 1px solid #ccc;}div.img img {width: 30%;height: auto;}</style>
 
@@ -23,8 +24,6 @@ var arrayImg = [{
                     {
                     src: "hallihallo_02.jpg",
                     title: "Travertine pools, Huanglon 2015"}]
-
-          
 	    getRandomImage(arrayImg, "");
 	    
 	    function getRandomImage(imgAr, path) {
@@ -43,6 +42,25 @@ var arrayImg = [{
   <br/>
   <br/>
   <br/><div style="font-size:smaller;"><a href="javascript:myWindow('http://validator.w3.org/check?uri=referer', 'Validation')">Validate</a> <a href="javascript:myWindow('http://whrl.github.io/impressum.html', 'Impressum')">Impressum</a> <a href="javascript:myWindow('disclaimer.html#sec-2','Haftungsausschluss')">Haftungsausschluss</a> <a href="javascript:myWindow('disclaimer.html','Disclaimer')">Disclaimer</a></div></div>
+<link rel="stylesheet" type="text/css" href="cookieconsent.css"/>
+<script type="text/javascript" src="cookieconsent.js"></script>
+
+<script type="text/javascript">
+// <![CDATA[
+cc.initialise({
+    cookies: {
+      //  social: {},
+        analytics: {},
+      //  advertising: {},
+      //  necessary: {}
+    },
+    settings: {
+        consenttype: "implicit"
+        bannerPosition: "bottom"
+    }
+});
+// ]]>
+</script>
 #+end_html 
 
 * noexport :noexport:
