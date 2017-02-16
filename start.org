@@ -8,9 +8,9 @@
  
 
 So far there are random notes on
- - Oneliners post:~/Dropbox/lib/oneliners/oneliners.org and
+ - Oneliners post:~/Dropbox/lib/oneliners.org and
  - Chinesischlernnotizen post:~/Dropbox/notes/deutsch-mandarin.org
-
+ - Linksammlung Onlinebibliotheken post:~/Dropbox/lib/library.org
 * with image :noexport:
 #+begin_html
       <script type="text/javascript">
