@@ -8,7 +8,7 @@
  
 
 So far there are random notes on
- - Oneliners post:~/Dropbox/lib/oneliners.org and
+ - Oneliners post:~/Dropbox/lib/oneliner.org and
  - Chinesischlernnotizen post:~/Dropbox/notes/deutsch-mandarin.org
  - Linksammlung Onlinebibliotheken post:~/Dropbox/lib/library.org
 * with image :noexport:
