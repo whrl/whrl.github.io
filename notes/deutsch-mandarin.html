@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>My Chinese Learning Notes &#x2013; in progress</title>
-<!-- 2017-02-23 Thu 10:21 -->
+<!-- 2017-02-23 Thu 12:40 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="T. Wöhrl" />
@@ -15,6 +15,112 @@
 <a accesskey="H" href="/">Start</a>
 </div><div id="content">
 <h1 class="title">My Chinese Learning Notes &#x2013; in progress</h1>
+<script>
+function myFunction() {
+  // Source: https://www.w3schools.com/howto/howto_js_filter_table.asp <2017-02-23 Thu>
+  // Declare variables 
+  var input, filter, table, tr, td, i, ul, li, a, h2, h3, h4, span, orgul, p;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  //table = document.getElementById("myTable");
+  tr = document.getElementsByTagName("tr");
+li = document.getElementsByTagName('li');
+h2 = document.getElementsByTagName('h2');
+h3 = document.getElementsByTagName('h3');
+h4 = document.getElementsByTagName('h4');
+orgul = document.getElementsByClassName('org-ul');
+p = document.getElementsByTagName('p');
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    } 
+  }
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < orgul.length; i++) {
+    a = orgul[i].getElementsByTagName("li")[0];
+    if (a) {
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        orgul[i].style.display = "";
+      } else {
+        orgul[i].style.display = "none";
+      }
+    } 
+  }
+
+ // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < p.length; i++) {
+   
+      if (p[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+        p[i].style.display = "";
+      } else {
+        p[i].style.display = "none";
+      }
+    }
+
+  // Loop through all h2 headlines, and hide those who don't match the search query
+  for (i = 0; i < h2.length; i++) {
+    span = h2[i].getElementsByTagName("span")[0];
+    if (span) {
+      if (span.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        h2[i].style.display = "";
+      } else {
+       // h2[i].style.display = "inline";
+        h2[i].setAttribute("style", "font-size: smaller;display: inline"); // Multiple style properties
+      }
+    } 
+  }
+
+ // Loop through all h3 headlines, and hide those who don't match the search query
+  for (i = 0; i < h3.length; i++) {
+    span = h3[i].getElementsByTagName("span")[0];
+    if (span) {
+      if (span.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        h3[i].style.display = "";
+      } else {
+        h3[i].style.display = "none";
+      }
+    } 
+  }
+
+// Loop through all h4 headlines, and hide those who don't match the search query
+  for (i = 0; i < h4.length; i++) {
+    span = h4[i].getElementsByTagName("span")[0];
+    if (span) {
+      if (span.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        h4[i].style.display = "";
+      } else {
+        h4[i].style.display = "none";
+      }
+    } 
+  }
+
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+
+
+
+
+
+}
+</script>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Filter this page...">
+
 <div class="abstract">
 <p>
 Persönliche Chinesisichlernnotizen (ohne Gewähr)
@@ -94,6 +200,7 @@ Persönliche Chinesisichlernnotizen (ohne Gewähr)
 </ul>
 </div>
 </div>
+
 
 <div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1"><span class="section-number-2">1</span> Pronomen</h2>
