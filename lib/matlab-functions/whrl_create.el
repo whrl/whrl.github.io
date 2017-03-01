@@ -46,13 +46,13 @@
     (erase-buffer)
     ;(insert -filePreamble)
     (insert -htmlHeader)
-    (insert "<div><table><tr>")
+    (insert "<div><table><thead><tr>")
     (while -tableHeading
       (insert "<th>")
       (insert (pop -tableHeading))
       (insert "</th>")
       )
-    (insert "</tr>")
+    (insert "</tr></thead><tbody>")
     
     (while -fileList
       (setq -fileName (pop -fileList))
@@ -78,7 +78,7 @@
 	)
       (insert "</tr>")
       )
-    (insert "</table></div>")
+    (insert "</tbody></table></div>")
     (insert -filePostamble)
     (save-buffer)
     (kill-buffer)

@@ -63,7 +63,10 @@ span.untermstring { color:#B20000 }
 span.syscmd { color:#B28C00 }
 
 
-  table { border-collapse:collapse; }
+table { border-collapse:collapse; }
+table thead th { border-bottom: 1px solid #000; }
+table { border-bottom: 1px solid #000; }
+
   caption.t-above { caption-side: top; }
   caption.t-bottom { caption-side: bottom; }
   td, th { vertical-align:top;  }
