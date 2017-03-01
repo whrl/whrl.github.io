@@ -88,7 +88,7 @@
 
 (defun whrl-modify-html-matlab ()
     (setq -fileDir "c:/users/tw/Dropbox/www/whrl.github.io/code/matlab/")
-    (setq -htmlHeader "<?xml version=\"1.0\" encoding=\"utf-8\"?> <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<title></title>\n<meta  name=\"author\" content=\"T. Wöhrl\" />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"theme.css\" />\n</head>\n<a href=\"/\">Home</a> <a href=\"../\">Up</a> <a href=\"./\">Index</a>")
+    (setq -htmlHeader "<?xml version=\"1.0\" encoding=\"utf-8\"?> <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\"><head>\n<title></title>\n<meta  name=\"author\" content=\"T. Wöhrl\" />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"theme.css\" />\n</head>\n<body>\n<div id=\"org-div-home-and-up\"><a href=\"/\">Home</a> <a href=\"../\">Up</a> <a href=\"./\">Index</a>\n</div>")
   (setq -fileList (directory-files -fileDir t ".html$"))
 
 (while -fileList
