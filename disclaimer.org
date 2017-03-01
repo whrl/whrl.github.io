@@ -1,0 +1,79 @@
+#+TITLE: 
+#+AUTHOR: Toni Wöhrl
+#+DATE: <2016-01-21 Fr>
+#+OPTIONS: toc:nil
+#+BIND: org-html-home/up-format ""
+# #+BIND: org-html-postamble "<script type=\"text/javascript\">(function() {var cx = '015189740857710454618:i3qtwm5bgwq';var gcse = document.createElement('script');gcse.type = 'text/javascript';gcse.async = true;gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//cse.google.com/cse.js?cx=' + cx;var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse, s);})();(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-73306628-1', 'auto');ga('send', 'pageview');</script>"
+
+* Disclaimer for  http://whrl.github.io
+This disclaimer was generated with http://www.privacypolicyonline.com/disclaimer-generator/ for free and slightly modified.
+
+If you require any more information or have any questions about our site's disclaimer, please feel free to contact me on [[https://plus.google.com/u/0/+ToniWöhrl][Google+]].
+
+All the information on this website is published in good faith and for general information purpose only. http://whrl.github.io does not make any warranties about the completeness, reliability and accuracy of this information. Any action you take upon the information you find on this website (http://whrl.github.io), is strictly at your own risk. http://whrl.github.io will not be liable for any losses and/or damages in connection with the use of my website.
+
+From my website, you can visit other websites by following hyperlinks to such external sites. While I strive to provide only quality links to useful and ethical websites, I have no control over the content and nature of these sites. These links to other websites do not imply a recommendation for all the content found on these sites. Site owners and content may change without notice and may occur before I have the opportunity to remove a link which may have gone 'bad'.
+
+Please be also aware that when you leave my website, other sites may have different privacy policies and terms which are beyond my control. Please be sure to check the Privacy Policies of these sites as well as their "Terms of Service" before engaging in any business or uploading any information.
+
+*Consent:* By using my website, you hereby consent to my disclaimer and agree to its terms.
+
+*Update:* This site disclaimer was last updated on: Saturday, January 23rd, 2016. Should we update, amend or make any changes to this document, those changes will be prominently posted here.
+
+* Haftungsausschluss für http://whrl.github.io
+
+[[http://www.deutsche-anwaltshotline.de/recht-auf-ihrer-website/disclaimer-baukasten][Disclaimer erstellt]] über den Baukasten der Deutschen Anwaltshotline AG
+
+** Haftung für Inhalte
+Die Erstellung der Inhalte dieser Webseite erfolgte mit größtmöglicher Sorgfalt. Allerdings
+können wir keine Gewähr für die Vollständigkeit der bereitgestellten Inhalte, ihre Aktualität
+sowie Richtigkeit übernehmen. Gem. §§ 8 - 10 TMG trifft uns als Dienstanbieter keine
+Pflicht, fremde Informationen, die übermittelt oder gespeichert wurden, zu überwachen oder
+nach Anhaltspunkten und Umständen zu forschen, die die Rechtswidrigkeit von Tätigkeiten
+und Informationen indizieren.
+
+Eine Verpflichtung unsererseits zur Nutzungssperrung von Inhalten im Rahmen der
+allgemeinen Gesetze bleibt hiervon stets unberührt. Diese Haftung kommt jedoch erst im
+Moment der Kenntnisnahme einer konkreten Verletzung von Rechten in Frage. Sollten uns
+Rechtsverletzungen bekannt werden, so sind die entsprechenden Inhalte von uns unverzüglich
+zu entfernen.
+
+Unsere Haftung für eigene Inhalte richtet sich, als Dienstanbieter, nach den allgemeinen
+Gesetzen.
+
+** Haftung für Links
+Diese Webseite beinhaltet Verlinkungen zu Webseiten Dritter - sog. externe Links. Die
+Inhalte dieser externen Links entziehen sich unserer Einflussnahme, sodass eine Gewähr für
+solche Inhalte unsererseits nicht übernommen wird.
+
+Die Verantwortung liegt stets beim jeweiligen Betreiber der externen Seiten. Zum Zeitpunkt
+der Verknüpfung der externen Links waren keine Rechtsverstöße ersichtlich. Die
+permanente Überwachung fremder Inhalte auf Rechtsverstöße ohne konkrete Hinweise ist
+uns nicht zumutbar.
+
+Sollten wir Kenntnis von Rechtsverletzungen erlangen, werden wir die entsprechenden
+externen Links unverzüglich entfernen.
+
+** Urheberrecht/Leistungsschutzrecht
+Auf die vom Anbieter auf dieser Seite veröffentlichten Inhalte findet das deutsche Urheber und
+Leistungsschutzrecht Anwendung. Sofern die Vervielfältigung, Bearbeitung, Verbreitung
+oder jegliche andere Art der Verwertung außerhalb des deutschen Urheber- und
+Leistungsschutzrechts liegt, bedarf es einer schriftlichen Zustimmung des jeweiligen
+Erstellers. Unerlaubtes Kopieren oder Downloaden dieser Seiten ist ausschließlich für den
+privaten Bereich, nicht jedoch für den kommerziellen, erlaubt. Sofern nicht wir als Betreiber
+auch als Ersteller der Inhalte fungieren, werden die Urheberrechte von Dritten beachtet. Wir
+sind stets bemüht solche Inhalte als Inhalte Dritter zu kennzeichnen. Wir bitten Sie für den
+Fall, dass Ihnen trotz sorgfältiger Arbeit unsererseits, eine Urheberrechtsverletzung auffällt,
+uns entsprechend darauf hinzuweisen, sodass die Entfernung dieser Inhalte umgehend
+veranlasst werden kann.
+
+** Datenschutz
+Die Nutzung dieser Webseite ist regelmäßig ohne Angabe personenbezogener Daten
+möglich. Sollten solche personenbezogenen Daten auf dieser Webseite dennoch erhoben
+werden, so erfolgt dies in Form einer freiwilligen Datenangabe durch den Nutzer. Eine
+Weitergabe der personenbezogenen Daten an Dritte erfolgt nicht, sofern keine ausdrückliche
+Zustimmung des Nutzers abgegeben wurde.
+
+
+*Änderungen der Datenschutzerklärung:* Sollten zukünftig Änderungen unserer Datenschutzerklärung vorgenommen werden, so
+werden die Änderungen stets auf diesen Seiten zu finden sein.

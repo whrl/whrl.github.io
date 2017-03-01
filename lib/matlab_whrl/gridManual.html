@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<title></title>
+<meta  name="author" content="T. Woehrl" />
+<link rel="stylesheet" type="text/css" href="theme.css" />
+</head>
+<body>
+<div id="org-div-home-and-up"><a href="/">Home</a> <a href="./">Index</a>
+</div><div class="content"><pre class="codeinput"><span class="keyword">function</span> gridManual(steps,style)
+<span class="comment">% info: plot grid with different spacings</span>
+<span class="comment">%</span>
+<span class="comment">% syntax: gridManual(steps,style)</span>
+<span class="comment">%</span>
+<span class="comment">% input:</span>
+<span class="comment">%</span>
+<span class="comment">% output:</span>
+<span class="comment">%</span>
+<span class="comment">% example: gridManual([-20:5:20],{'Linestyle',':','Color',[1 1 1]*.5})</span>
+<span class="comment">%</span>
+<span class="comment">% requires:</span>
+<span class="comment">%</span>
+<span class="comment">% see also:</span>
+<span class="comment">%</span>
+<span class="comment">% created with: MATLAB ver. 8.6.0.267246 (R2015b)</span>
+<span class="comment">% created by: T. Woehrl</span>
+<span class="comment">% created on: 2015-07-31</span>
+<span class="comment">%</span>
+<span class="comment">% modified:</span>
+<span class="comment">% - on:  by:  to:</span>
+<span class="comment">%</span>
+<span class="comment">% disclaimer: Without warranty of any kind.</span>
+<span class="comment">%</span>
+<span class="comment">%------------- BEGIN CODE ---------------</span>
+grid_n = length(steps);
+
+lines1 = [steps;steps];
+
+lines2 = ones(2,grid_n);
+lines2(1,1:grid_n) = ones(1,grid_n).*steps(1);
+lines2(2,1:grid_n) = ones(1,grid_n).*steps(end);
+
+plot(lines1,lines2,style{:}); hold <span class="string">on</span>
+plot(lines2,lines1,style{:})
+<span class="keyword">end</span>
+<span class="comment">%------------- END OF CODE --------------</span>
+</pre>´
+</div>
+</body>
+</html>

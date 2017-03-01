@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<title></title>
+<meta  name="author" content="T. Woehrl" />
+<link rel="stylesheet" type="text/css" href="theme.css" />
+</head>
+<body>
+<div id="org-div-home-and-up"><a href="/">Home</a> <a href="./">Index</a>
+</div><div class="content"><pre class="codeinput"><span class="keyword">function</span> [Xint,Xcut,err] = antImpCoord(filepaths, IDs, marker, tds, los, xis, tInt)
+<span class="comment">% info: imports kinematic data</span>
+<span class="comment">%</span>
+<span class="comment">% syntax: [Xint,Xcut,err] = antImpCoord(filepaths, IDs, marker, tds, los, xis, tInt)</span>
+<span class="comment">%</span>
+<span class="comment">% input:</span>
+<span class="comment">%</span>
+<span class="comment">% output:</span>
+<span class="comment">%</span>
+<span class="comment">% requires: impHedrickLab.m</span>
+<span class="comment">%</span>
+<span class="comment">% see also:</span>
+<span class="comment">%</span>
+<span class="comment">% created with: MATLAB ver. 8.6.0.267246 (R2015b) on Microsoft Windows 7 Professional  Version 6.1 (Build 7601: Service Pack 1)</span>
+<span class="comment">%</span>
+<span class="comment">% created by: T. Woehrl</span>
+<span class="comment">% created on: 2017-03-01</span>
+<span class="comment">%</span>
+<span class="comment">% modified:</span>
+<span class="comment">% - on:  by:  to:</span>
+<span class="comment">%</span>
+<span class="comment">% disclaimer: Without warranty of any kind.</span>
+<span class="comment">%</span>
+<span class="comment">%------------- BEGIN CODE ---------------</span>
+tic
+
+n = length(filepaths);
+
+
+Xint = nan(tInt,length(xis),n);
+Xcut = nan(max(los-tds),length(xis),n);
+err = {};
+<span class="keyword">for</span> k = 1:n
+
+
+    xy0 = [];
+    tcut = [];
+    xcut = [];
+    <span class="keyword">try</span>
+        disp([num2str(k),<span class="string">'/'</span>,num2str(n)]);
+        xy0 = impHedrickLab(filepaths{k},IDs{k},marker,<span class="string">'txt'</span>); <span class="comment">% import file</span>
+        tcut = tds(k):los(k);
+
+
+        xcut  = xy0(tcut,xis); <span class="comment">% cut data</span>
+        Xcut(1:length(xcut),xis,k) = xcut;
+
+        Xint(1:tInt,xis,k) = interp1_xn(xcut,tInt);
+    <span class="keyword">catch</span> me
+        err(k,1) = IDs(k);
+        <span class="keyword">continue</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+  whos
+  toc
+  err
+
+<span class="comment">%------------- END OF CODE --------------</span>
+</pre>´
+</div>
+</body>
+</html>
