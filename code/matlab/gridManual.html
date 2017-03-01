@@ -1,0 +1,49 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<meta  name="author" content="T. Wöhrl" />
+<link rel="stylesheet" type="text/css" href="theme.css"/>
+</head>
+<body>
+<div id="org-div-home-and-up"><a href="/">Home</a> <a href="./">Index</a>
+</div><div class="content"><pre class="codeinput"><span class="keyword">function</span> gridManual(steps,style)
+<span class="comment">% info: plot grid with different spacings</span>
+<span class="comment">%</span>
+<span class="comment">% syntax: gridManual(steps,style)</span>
+<span class="comment">%</span>
+<span class="comment">% input:</span>
+<span class="comment">%</span>
+<span class="comment">% output:</span>
+<span class="comment">%</span>
+<span class="comment">% example: gridManual([-20:5:20],{'Linestyle',':','Color',[1 1 1]*.5})</span>
+<span class="comment">%</span>
+<span class="comment">% requires:</span>
+<span class="comment">%</span>
+<span class="comment">% see also:</span>
+<span class="comment">%</span>
+<span class="comment">% created with: MATLAB ver. 8.6.0.267246 (R2015b) on Microsoft Windows 7 Professional  Version 6.1 (Build 7601: Service Pack 1)</span>
+<span class="comment">%</span>
+<span class="comment">% created by: T. Woehrl</span>
+<span class="comment">% created on: 2015-07-31</span>
+<span class="comment">%</span>
+<span class="comment">% modified:</span>
+<span class="comment">% - on:  by:  to:</span>
+<span class="comment">%</span>
+<span class="comment">% disclaimer: Without warranty of any kind.</span>
+<span class="comment">%</span>
+<span class="comment">%------------- BEGIN CODE ---------------</span>
+grid_n = length(steps);
+
+lines1 = [steps;steps];
+
+lines2 = ones(2,grid_n);
+lines2(1,1:grid_n) = ones(1,grid_n).*steps(1);
+lines2(2,1:grid_n) = ones(1,grid_n).*steps(end);
+
+plot(lines1,lines2,style{:}); hold <span class="string">on</span>
+plot(lines2,lines1,style{:})
+<span class="keyword">end</span>
+<span class="comment">%------------- END OF CODE --------------</span>
+</pre></body></html>
