@@ -88,21 +88,40 @@
 
 (defun whrl-modify-html-matlab ()
     (setq -fileDir "c:/users/tw/Dropbox/www/whrl.github.io/code/matlab/")
-    (setq -htmlHeader "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\"><title></title>\n<meta  name=\"author\" content=\"T. Wöhrl\" />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"theme.css\" />\n</head>\n")
+    (setq -htmlHeader "<?xml version=\"1.0\" encoding=\"utf-8\"?> <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<title></title>\n<meta  name=\"author\" content=\"T. Wöhrl\" />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"theme.css\" />\n</head>\n<a href=\"/\">Home</a> <a href=\"../\">Up</a> <a href=\"./\">Index</a>")
   (setq -fileList (directory-files -fileDir t ".html$"))
 
 (while -fileList
       (setq -fileName (pop -fileList))
-      
-      (ignore-errors
-	(whrl-modify-html-file -fileName "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">" "</head>" -htmlHeader)
-	)
-      (ignore-errors
-	(whrl-modify-html-file -fileName "<p class=\"footer\">" "</body>" "</div>\n</body>")
-	)
-      ))
-    
 
+      (save-excursion
+	(find-file -fileName)
+	(beginning-of-buffer)
+	(when (search-forward "DTD HTML 4.01 Transitional")
+	(delete-region (goto-char 1) (search-forward "<body>"))
+	(insert -htmlHeader)
+	)
+	(goto-char (point-max))
+	(when (search-backward "<p class=\"footer\">")
+	      (delete-region (point) (point-max)
+			     )
+	      (insert "´\n</div>\n</body>\n</html>")
+	      )
+	
+	
+(save-buffer)
+(kill-buffer)))
+
+;      (ignore-errors
+;	(whrl-modify-html-file -fileName "<!DOCTYPE html\n PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">" "</head>" -htmlHeader)
+;	)
+ ;     (ignore-errors
+;	(whrl-modify-html-file -fileName "<p class=\"footer\">" "</body>" "</div>\n</body>")
+;	)
+ ;     ))
+)
+
+(ignore-errors
 (whrl-create-html-table)
-
+)
 (whrl-modify-html-matlab)
