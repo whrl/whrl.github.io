@@ -7,7 +7,7 @@ cd %~dp0
 call lib\matlab-functions\createHTMLTable.bat
 
 TITLE github
-nircmd win activate %github%
+nircmd win activate github
 
 cd %~dp0
 %gitdir%  add --all & %gitdir% commit -m "Note %datetimef%" & %gitdir% push
