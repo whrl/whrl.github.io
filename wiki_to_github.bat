@@ -6,8 +6,8 @@ set gitdir=C:\Users\tw\app\win\PortableGit\cmd\git.exe
 cd %~dp0
 call lib\matlab-functions\createHTMLTable.bat
 
-TITLE %SOME_UNIQUE_VALE%
-nircmd win activate %SOME_UNIQUE_VALE%
+TITLE github
+nircmd win activate github
 
 cd %~dp0
 %gitdir%  add --all & %gitdir% commit -m "Note %datetimef%" & %gitdir% push
