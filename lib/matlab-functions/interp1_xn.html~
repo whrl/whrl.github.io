@@ -81,8 +81,7 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 <span class="comment">%</span>
 <span class="comment">% see also:</span>
 <span class="comment">%</span>
-<span class="comment">% created with: MATLAB ver. 8.6.0.267246 (R2015b) on Microsoft Windows 7 Professional  Version 6.1 (Build 7601: Service Pack 1)</span>
-<span class="comment">%</span>
+<span class="comment">% created with: MATLAB ver. 8.6.0.267246 (R2015b)</span>
 <span class="comment">% created by: T. Woehrl</span>
 <span class="comment">% created on: 2017-03-01</span>
 <span class="comment">%</span>
@@ -116,8 +115,7 @@ function [x2]=interp1_xn(x1,n)
 %
 % see also: 
 %
-% created with: MATLAB ver. 8.6.0.267246 (R2015b) on Microsoft Windows 7 Professional  Version 6.1 (Build 7601: Service Pack 1)
-%
+% created with: MATLAB ver. 8.6.0.267246 (R2015b)
 % created by: T. Woehrl
 % created on: 2017-03-01
 %
