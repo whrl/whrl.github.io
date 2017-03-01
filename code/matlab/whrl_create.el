@@ -34,7 +34,7 @@
   (setq -fileReg "\\.html$")
   (setq -fileTableName "index.html")
 					;  (setq -fileList (find-lisp-find-files -fileDir -fileReg))
-  (setq -htmlHeader "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n<title></title>\n<meta  name=\"author\" content=\"T. Wöhrl\" />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"theme.css\"/>\n</head>\n<body>\n<div id=\"org-div-home-and-up\"><a href=\"/\">Home</a> <a href=\"./\">Index</a>\n</div>")
+  (setq -htmlHeader "<head><meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n<title></title>\n<meta  name=\"author\" content=\"T. Wöhrl\" />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"theme.css\"/>\n</head>\n")
   (setq -fileList (directory-files -fileDir t ".html$"))
   (setq -reg '("% created on:" "% info:"  ))
   (setq -tableHeading '("Link" "Created on"  "Shortinfo"))
@@ -56,14 +56,8 @@
     
     (while -fileList
       (setq -fileName (pop -fileList))
-      (save-excursion
-      (ignore-errors
-	(whrl-modify-html-file -fileName "<head" "<body>" -htmlHeader)
-	)
-      (ignore-errors
-	(whrl-modify-html-file -fileName "<p class=\"footer\">" "</body>" "</body>")
-	))
-      (insert "<tr>")
+      
+          (insert "<tr>")
       (insert " <td><a href=\"")
 
       (insert (file-name-nondirectory -fileName))      
@@ -90,5 +84,25 @@
     (kill-buffer)
     )
   (browse-url "index.html")
-  )
+)
+
+(defun whrl-modify-html-matlab ()
+    (setq -fileDir "c:/users/tw/Dropbox/www/whrl.github.io/code/matlab/")
+    (setq -htmlHeader "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\"><title></title>\n<meta  name=\"author\" content=\"T. Wöhrl\" />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"theme.css\" />\n</head>\n")
+  (setq -fileList (directory-files -fileDir t ".html$"))
+
+(while -fileList
+      (setq -fileName (pop -fileList))
+      
+      (ignore-errors
+	(whrl-modify-html-file -fileName "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">" "</head>" -htmlHeader)
+	)
+      (ignore-errors
+	(whrl-modify-html-file -fileName "<p class=\"footer\">" "</body>" "</div>\n</body>")
+	)
+      ))
+    
+
 (whrl-create-html-table)
+
+(whrl-modify-html-matlab)
