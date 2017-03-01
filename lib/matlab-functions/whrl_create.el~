@@ -30,11 +30,11 @@
 
 
 (defun whrl-create-html-table ()
-  (setq -fileDir "c:/users/tw/Dropbox/www/whrl.github.io/code/matlab/")
+  (setq -fileDir "c:/users/tw/Dropbox/www/whrl.github.io/lib/matlab-functions/")
   (setq -fileReg "\\.html$")
   (setq -fileTableName "index.html")
 					;  (setq -fileList (find-lisp-find-files -fileDir -fileReg))
-  (setq -htmlHeader "<head><meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n<title></title>\n<meta  name=\"author\" content=\"T. Wöhrl\" />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"theme.css\"/>\n</head>\n")
+  (setq -htmlHeader "<?xml version=\"1.0\" encoding=\"utf-8\"?> <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\"><head>\n<title></title>\n<meta  name=\"author\" content=\"T. Woehrl\" />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"theme.css\" />\n</head>\n<body>\n<div id=\"org-div-home-and-up\"><a href=\"/\">Home</a> <a href=\"./\">Index</a>\n</div>\n<div><br/>Collection of m-files.\n<br/>\n<br/></div>")
   (setq -fileList (directory-files -fileDir t ".html$"))
   (setq -reg '("% created on:" "% info:"  ))
   (setq -tableHeading '("Link" "Created on"  "Shortinfo"))
@@ -44,15 +44,15 @@
   (save-excursion
     (find-file (concat -fileDir -fileTableName))
     (erase-buffer)
-    (insert -filePreamble)
+    ;(insert -filePreamble)
     (insert -htmlHeader)
-    (insert "<table><tr>")
+    (insert "<div><table><thead><tr>")
     (while -tableHeading
       (insert "<th>")
       (insert (pop -tableHeading))
       (insert "</th>")
       )
-    (insert "</tr>")
+    (insert "</tr></thead><tbody>")
     
     (while -fileList
       (setq -fileName (pop -fileList))
@@ -78,7 +78,7 @@
 	)
       (insert "</tr>")
       )
-    (insert "</table>")
+    (insert "</tbody></table></div>")
     (insert -filePostamble)
     (save-buffer)
     (kill-buffer)
@@ -87,8 +87,8 @@
 )
 
 (defun whrl-modify-html-matlab ()
-    (setq -fileDir "c:/users/tw/Dropbox/www/whrl.github.io/code/matlab/")
-    (setq -htmlHeader "<?xml version=\"1.0\" encoding=\"utf-8\"?> <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\"><head>\n<title></title>\n<meta  name=\"author\" content=\"T. Wöhrl\" />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"theme.css\" />\n</head>\n<body>\n<div id=\"org-div-home-and-up\"><a href=\"/\">Home</a> <a href=\"../\">Up</a> <a href=\"./\">Index</a>\n</div>")
+    (setq -fileDir "c:/users/tw/Dropbox/www/whrl.github.io/lib/matlab-functions/")
+    (setq -htmlHeader "<?xml version=\"1.0\" encoding=\"utf-8\"?> <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\"><head>\n<title></title>\n<meta  name=\"author\" content=\"T. Woehrl\" />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"theme.css\" />\n</head>\n<body>\n<div id=\"org-div-home-and-up\"><a href=\"/\">Home</a> <a href=\"./\">Index</a>\n</div>")
   (setq -fileList (directory-files -fileDir t ".html$"))
 
 (while -fileList
@@ -121,7 +121,7 @@
  ;     ))
 )
 
-(ignore-errors
+
 (whrl-create-html-table)
-)
+
 (whrl-modify-html-matlab)

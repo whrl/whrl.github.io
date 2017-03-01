@@ -31,11 +31,11 @@
 
 (defun whrl-create-html-table ()
   (setq -fileDir "c:/users/tw/Dropbox/www/whrl.github.io/lib/matlab-functions/")
-  (setq -fileReg "\\.html$")
+  (setq -fileReg ".html$")
   (setq -fileTableName "index.html")
 					;  (setq -fileList (find-lisp-find-files -fileDir -fileReg))
   (setq -htmlHeader "<?xml version=\"1.0\" encoding=\"utf-8\"?> <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\"><head>\n<title></title>\n<meta  name=\"author\" content=\"T. Woehrl\" />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"theme.css\" />\n</head>\n<body>\n<div id=\"org-div-home-and-up\"><a href=\"/\">Home</a> <a href=\"./\">Index</a>\n</div>\n<div><br/>Collection of m-files.\n<br/>\n<br/></div>")
-  (setq -fileList (directory-files -fileDir t ".html$"))
+  (setq -fileList (directory-files -fileDir t -fileReg))
   (setq -reg '("% created on:" "% info:"  ))
   (setq -tableHeading '("Link" "Created on"  "Shortinfo"))
   (setq -tableClosing)
@@ -55,8 +55,9 @@
     (insert "</tr></thead><tbody>")
     
     (while -fileList
-      (setq -fileName (pop -fileList))
       
+      (setq -fileName (pop -fileList))
+      (if   (equal (file-name-nondirectory -fileName) "index.html")
           (insert "<tr>")
       (insert " <td><a href=\"")
 
@@ -77,7 +78,7 @@
 	(insert "</td>")      
 	)
       (insert "</tr>")
-      )
+      ))
     (insert "</tbody></table></div>")
     (insert -filePostamble)
     (save-buffer)
@@ -97,16 +98,19 @@
       (save-excursion
 	(find-file -fileName)
 	(beginning-of-buffer)
+	(ignore-errors
 	(when (search-forward "DTD HTML 4.01 Transitional")
 	(delete-region (goto-char 1) (search-forward "<body>"))
 	(insert -htmlHeader)
 	)
 	(goto-char (point-max))
+	)
+	(ignore-errors
 	(when (search-backward "<p class=\"footer\">")
 	      (delete-region (point) (point-max)
 			     )
 	      (insert "´\n</div>\n</body>\n</html>")
-	      )
+	      ))
 	
 	
 (save-buffer)
