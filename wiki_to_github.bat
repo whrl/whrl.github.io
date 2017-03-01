@@ -8,7 +8,5 @@ set gitdir=C:\Users\tw\app\win\PortableGit\cmd\git.exe
 cd %~dp0
 call lib\matlab_whrl\createHTMLTable.bat
 
-
-
 cd %~dp0
 %gitdir%  add --all & %gitdir% commit -m "Note %datetimef%" & %gitdir% push
