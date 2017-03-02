@@ -11,6 +11,9 @@
   .center { margin-left: auto; margin-right: auto; text-align: center; }
   .underline { text-decoration: underline; }
   #postamble p, #preamble p { margin: .2em; }
+  h1 { font-size: large }
+  h2 {font-size: large }
+  h3 {font-size: medium }
   p.verse { margin-left: 3%; }
   pre {
       border: 1px solid #ccc;
