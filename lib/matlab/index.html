@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <title>M-Files</title>
 <meta  name="author" content="T. Woehrl" />
@@ -6,25 +7,21 @@
 <script type="text/javascript">
 //<![CDATA[
 function myFunction() {
-  // Source: https://www.w3schools.com/howto/howto_js_filter_table.asp [2017-02-23]
-  // Declare variables 
-  var input, filter, table, tr, td, i;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = document.getElementsByTagName("tr");
+    // Declare variables
+    var input, filter, li, i;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    li = document.getElementsByTagName('li');
 
-  // Loop through all table rows, and hide those who don't match the search query
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    } 
-  }
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        
+        if (li[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
 }
 //]]>
 </script></head>
@@ -33,11 +30,8 @@ function myFunction() {
 </div>
 <div>
 <br/>Meine m-file Bibliothek<br/> 
-<br/></div><div>  <input type="text" id="myInput" onkeyup="myFunction()" value="Filter..."/></div><br/><div><table><thead><tr><th>Collection</th><th>Link</th><th>Created on</th><th>Shortinfo</th></tr></thead><tbody><tr><td>time_series</td>
- <td><a href="time_series/interp1_xn.m">interp1_xn.m </a> </td> <td> 2017-03-01</td> <td> interpolate m cols with linspace to n values</td></tr><tr><td>time_series</td>
- <td><a href="time_series/runningDirection.m">runningDirection.m </a> </td> <td> 2017-03-01</td> <td> average direction (linear regression method) of moving point r(x1,x2,t)</td></tr><tr><td colspan="4"><hr/></td></tr>
-<tr><td>plot</td>
- <td><a href="plot/gridManual.m">gridManual.m </a> </td> <td> 2015-07-31</td> <td> plot grid with different spacings</td></tr><tr><td colspan="4"><hr/></td></tr>
-<tr><td>ant</td>
- <td><a href="ant/antImpCoord.m">antImpCoord.m </a> </td> <td> 2017-03-01</td> <td> imports kinematic data</td></tr><tr><td colspan="4"><hr/></td></tr>
-</tbody></table></div><div id="org-whrl-ending"><hr/><a href="http://validator.w3.org/check?uri=referer">Validate</a> <a href="/disclaimer.html">Disclaimer</a> This page was last modified on 2017-03-03.</div></body></html>
+<br/></div><div>  <input type="text" id="myInput" onkeyup="myFunction()"/></div><div><h1>time_series</h1>
+<ul> <li><a href="time_series/interp1_xn.m">interp1_xn.m</a><a>: interpolate m cols with linspace to n values 2017-03-01 </a></li> <li><a href="time_series/runningDirection.m">runningDirection.m</a><a>: average direction (linear regression method) of moving point
+ r(x1,x2,t) 2017-03-01 </a></li></ul><h1>plot</h1>
+<ul> <li><a href="plot/gridManual.m">gridManual.m</a><a>: plot grid with different spacings 2015-07-31 </a></li></ul><h1>ant</h1>
+<ul> <li><a href="ant/antImpCoord.m">antImpCoord.m</a><a>: imports kinematic data 2017-03-01 </a></li></ul></div><div id="org-whrl-ending"><hr/><a href="http://validator.w3.org/check?uri=referer">Validate</a> <a href="/disclaimer.html">Disclaimer</a> This page was last modified on 2017-03-05.</div></body></html>

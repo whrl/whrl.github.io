@@ -1,28 +1,29 @@
 function [lx,ly,phi,dm]=runningDirection(x,y)
-% info: average direction (linear regression method) of moving point r(x1,x2,t)
+% info: average direction (linear regression method) of moving point
+% r(x1,x2,t) //
 %
-% syntax: [lx,ly,phi,dm]=runningDirection(x,y)
+% syntax: [lx,ly,phi,dm]=runningDirection(x,y) //
 %
 % input: 
-% - x: Signal in Laufrichtung 1D-Vektor
-% - y: Signal in horizontaler Richtung 1D-Vektor
+% - x: Signal in Laufrichtung 1D-Vektor //
+% - y: Signal in horizontaler Richtung 1D-Vektor //
 % output: 
-% - lx, ly: Lineare Regression
-% - phi: Winkel zwischen x-Achse und (lx,ly)
+% - lx, ly: Lineare Regression //
+% - phi: Winkel zwischen x-Achse und (lx,ly) //
 % - dm: Drehmatrix
 %
-% requires: 
+% requires: //
 %
-% see also: 
+% see also: //
 %
-% created with: MATLAB ver. 8.6.0.267246 (R2015b)
-% created by: T. Woehrl
-% created on: 2017-03-01
+% created with: MATLAB ver. 8.6.0.267246 (R2015b) //
+% created by: T. Woehrl //
+% created on: 2017-03-01 //
 %
 % modified:
 % - on:  by:  to:
 %
-% disclaimer: Without warranty of any kind.
+% disclaimer: Without warranty of any kind. //
 %
 %------------- BEGIN CODE ---------------
 % Fit

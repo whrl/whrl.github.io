@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>My Chinese Learning Notes &#x2013; in progress (lifelong)</title>
-<!-- 2017-03-03 Fri 14:56 -->
+<!-- 2017-03-05 Sun 18:18 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="T. Wöhrl" />
@@ -12,7 +12,7 @@
 </head>
 <body>
 <div id="org-div-home-and-up">
-<a accesskey="H" href="/">Start</a>
+<a href="/">Home</a> <a href="./">Index</a>
 </div><div id="content">
 <h1 class="title">My Chinese Learning Notes &#x2013; in progress (lifelong)</h1>
 <script type="text/javascript">
@@ -20,15 +20,13 @@
 function myFunction() {
   // Source: https://www.w3schools.com/howto/howto_js_filter_table.asp [2017-02-23]
   // Declare variables 
-  var input, filter, table, tr, td, i, ul, li, a, h2, h3, h4, span, orgul, p;
+  var input, filter, table, tr, td, i, ul, li, a, h4, span, orgul, p;
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
   //table = document.getElementById("myTable");
   tr = document.getElementsByTagName("tr");
 li = document.getElementsByTagName('li');
 h2 = document.getElementsByTagName('h2');
-h3 = document.getElementsByTagName('h3');
-h4 = document.getElementsByTagName('h4');
 orgul = document.getElementsByClassName('org-ul');
 p = document.getElementsByTagName('p');
 
@@ -79,31 +77,6 @@ p = document.getElementsByTagName('p');
     } 
   }
 
- // Loop through all h3 headlines, and hide those who don't match the search query
-  for (i = 0; i < h3.length; i++) {
-    span = h3[i].getElementsByTagName("span")[0];
-    if (span) {
-      if (span.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        h3[i].style.display = "";
-      } else {
-        h3[i].style.display = "none";
-      }
-    } 
-  }
-
-// Loop through all h4 headlines, and hide those who don't match the search query
-  for (i = 0; i < h4.length; i++) {
-    span = h4[i].getElementsByTagName("span")[0];
-    if (span) {
-      if (span.innerHTML.toUpperCase().indexOf(filter) > -1) {
-       h4[i].style.display = "";
-   } else {
-        h4[i].style.display = "none";
-      }
-    } 
-  }
-
-
     // Loop through all list items, and hide those who don't match the search query
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];
@@ -116,7 +89,7 @@ p = document.getElementsByTagName('p');
 }
 //]]>
 </script>
-<input type="text" id="myInput" onkeyup="myFunction()" value="Filter..."/>
+<input type="text" id="myInput" onkeyup="myFunction()"/>
 
 <div class="abstract">
 <p>
@@ -7211,7 +7184,7 @@ welche nǎ 哪, wieviele jǐ 几
 </div>
 </div>
 <div id="postamble" class="status">
-<div id="org-whrl-ending" style="font-size:smaller;text-align:right;"><hr/>This page was last updated on 2017-03-03 by T. Wöhrl.<br/><a href="http://validator.w3.org/check?uri=referer">Validate</a> <a href="/impressum.html">Impressum</a> <a href="/disclaimer.html#sec-2">Haftungsausschluss</a> <a href="/disclaimer.html">Disclaimer</a></div>
+<div id="org-whrl-ending"><hr/><a href="http://validator.w3.org/check?uri=referer">Validate</a> <a href="/disclaimer.html">Disclaimer</a> This page was last modified on 2017-03-03.</div>
 </div>
 </body>
 </html>

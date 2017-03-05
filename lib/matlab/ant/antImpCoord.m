@@ -1,25 +1,26 @@
 function [Xint,Xcut,err] = antImpCoord(filepaths, IDs, marker, tds, los, xis, tInt)
-% info: imports kinematic data
+% info: imports kinematic data //
 %
-% syntax: [Xint,Xcut,err] = antImpCoord(filepaths, IDs, marker, tds, los, xis, tInt)
+% syntax: [Xint,Xcut,err] = antImpCoord(filepaths, IDs, marker, tds, los,
+% xis, tInt) //
 %
-% input:
+% input: cell, cell, char, double, double, double, double //
 %
-% output: 
+% output: double, double, cell //
 %
-% requires: impHedrickLab.m
+% requires: impHedrickLab.m //
 %
 % see also: 
 %
-% created with: MATLAB ver. 8.6.0.267246 (R2015b)
+% created with: MATLAB ver. 8.6.0.267246 (R2015b) //
 %
-% created by: T. Woehrl
-% created on: 2017-03-01
+% created by: T. Woehrl //
+% created on: 2017-03-01 //
 %
 % modified:
 % - on:  by:  to:
 %
-% disclaimer: Without warranty of any kind.
+% disclaimer: Without warranty of any kind. //
 %
 %------------- BEGIN CODE ---------------
 tic

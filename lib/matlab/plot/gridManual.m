@@ -1,26 +1,26 @@
 function gridManual(steps,style)
-% info: plot grid with different spacings
+% info: plot grid with different spacings //
 %
-% syntax: gridManual(steps,style)
+% syntax: gridManual(steps,style) //
 %
-% input: 
+% input: double, double //
 %
-% output: 
+% output: plot //
 %
-% example: gridManual([-20:5:20],{'Linestyle',':','Color',[1 1 1]*.5})
+% example: gridManual([-20:5:20],{'Linestyle',':','Color',[1 1 1]*.5}) //
 %
-% requires: 
+% requires: //
 %
-% see also: 
+% see also: //
 %
-% created with: MATLAB ver. 8.6.0.267246 (R2015b)
-% created by: T. Woehrl
-% created on: 2015-07-31
+% created with: MATLAB ver. 8.6.0.267246 (R2015b) //
+% created by: T. Woehrl //
+% created on: 2015-07-31 //
 %
 % modified:
 % - on:  by:  to:
 %
-% disclaimer: Without warranty of any kind.
+% disclaimer: Without warranty of any kind. //
 %
 %------------- BEGIN CODE ---------------
 grid_n = length(steps);
