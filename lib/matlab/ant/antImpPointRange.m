@@ -34,7 +34,7 @@ function [X,err]=antImpPointRange(filepaths, IDs, marker, tis,vor,nach ,xis)
      xy0 = []; bereich = [];
      try
               
-         disp([num2str(k),'/',num2str(n)])
+       %  disp([num2str(k),'/',num2str(n)])
              
          xy0 = impHedrickLab(filepaths{k},IDs{k},marker{k},'txt');
          tk =  tis(k)-vor:tis(k)+nach;
