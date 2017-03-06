@@ -1,7 +1,7 @@
-function [Xint,Xcut,err] = antImpCoord(filepaths, IDs, marker, tds, los, xis, tInt)
-% info: imports kinematic data //
+function [Xint,Xcut,err] = antImpPointInterp1(filepaths, IDs, marker, tds, los, xis, tInt)
+% info: Importiert Trajektorie zwischen zwei Zeitpunkten und interpoliert diese auf n Werte  //
 %
-% syntax: [Xint,Xcut,err] = antImpCoord(filepaths, IDs, marker, tds, los,
+% syntax: [Xint,Xcut,err] = antImpPointInterp1(filepaths, IDs, marker, tds, los,
 % xis, tInt) //
 %
 % input: cell, cell, char, double, double, double, double //

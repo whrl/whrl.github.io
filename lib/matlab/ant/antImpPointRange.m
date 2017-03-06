@@ -1,7 +1,7 @@
-function [X,err]=antImp2DCoord(filepaths, IDS, marker, tis, xis)
-% info: importiere Koordinaten eines Markers zu bestimmten Messzeitpunkt //
+function [X,err]=antImpPointRange(filepaths, IDs, marker, tis,vor,nach ,xis)
+% info: importiere Koordinaten eines Punktes um (zeitlich vor und nach) Messzeitpunkt //
 %
-% syntax: [X,err]=antImp2DCoord(filepaths, IDS, marker, tis, xis) //
+% syntax: [X,err]=antImpPointRange(filepaths, IDS, marker, tis, xis) //
 %
 % input:  //
 %
@@ -15,7 +15,7 @@ function [X,err]=antImp2DCoord(filepaths, IDS, marker, tis, xis)
 %
 % created with: MATLAB ver. 8.6.0.267246 (R2015b) //
 % created by: T. Woehrl //
-% created on: 2017-03-05 //
+% created on: 2017-03-06 //
 %
 % modified:
 % - on:  by:  to:
@@ -25,19 +25,20 @@ function [X,err]=antImp2DCoord(filepaths, IDS, marker, tis, xis)
 %------------- BEGIN CODE ---------------
  tic
  n = length(filepaths);
- X = nan(n,length(xis));
+ ts= vor+nach+1;
+ X = nan(n,length(ts),length(xis));
  err = {};
  for k = 1:n
 
     
-     xy0 = []; 
+     xy0 = []; bereich = [];
      try
-             
+              
          disp([num2str(k),'/',num2str(n)])
              
-         xy0 = impHedrickLab(filepaths{k},IDs{k},marker,'txt');
-                 
-         X(k,xis) = xy0(tis(k),xis); 
+         xy0 = impHedrickLab(filepaths{k},IDs{k},marker{k},'txt');
+         tk =  tis(k)-vor:tis(k)+nach;
+         X(k,1:ts,xis) = xy0(tk,xis); 
              
      catch me
          err{k,1} = IDs(k);
