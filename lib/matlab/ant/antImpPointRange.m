@@ -15,7 +15,7 @@ function [X,err]=antImpPointRange(filepaths, IDs, marker, tis,vor,nach ,xis)
 %
 % created with: MATLAB ver. 8.6.0.267246 (R2015b) //
 % created by: T. Woehrl //
-% created on: 2017-03-06 //
+% created on: 2017-03-15 //
 %
 % modified:
 % - on:  by:  to:
