@@ -29,10 +29,10 @@ function [X,err]=antImpPointAtFrame(filepaths, IDs, marker, tis, xis)
  err = {};
  for k = 1:n
 
-    
+     
      xy0 = []; 
      try
-             
+              
          disp([num2str(k),'/',num2str(n)])
              
          xy0 = impHedrickLab(filepaths{k},IDs{k},marker,'txt');

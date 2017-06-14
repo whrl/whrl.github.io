@@ -39,7 +39,7 @@ for k = 1:n
           
         disp([num2str(k),'/',num2str(n)])
         clear lx ly phi dm b3 xy0rot x0 z0
-        
+         
          % bestimme mittlere Laufrichtung
         b3 = impHedrickLab(filepaths{k},filenames{k},'b3','txt'); % petiolus
         [lx,ly,phi,dm] = runningDirection(b3(cutRD,1),b3(cutRD,2));
