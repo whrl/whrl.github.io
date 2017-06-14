@@ -1,9 +1,16 @@
+%% MATLAB: Copy plot
+% Notes on MATLAB about copying a plot from figure 1 into different
+% subplots of figure 2
+
 %% Example Fig. 1 
-figure(1);
-f1 = axes('Parent',1);
+
+% sample data
 x = [0 1 1 2; 1 1 2 2; 0 0 1 1];
 y = [1 1 1 1; 1 0 1 0; 0 0 0 0];
 z = [1 1 1 1; 1 0 1 0; 0 0 0 0];
+
+figure(1);
+f1 = axes('Parent',1);
 fill3(x,y,z,'r')
 title('fig 1')
 xlabel('x')
@@ -11,7 +18,7 @@ ylabel('y')
 zlabel('z')
 
 
-%% Copy Fig. 1 into subplots of Fig. 2 
+%% Copy plot from Fig. 1 into subplots of Fig. 2 
 
 f2 = figure(2);
 
@@ -58,3 +65,13 @@ set([YLabels{:}], 'String', 'Y');
 set([ZLabels{:}], 'String', 'Z');
 
 
+%% Info
+
+% created_by:: T. Woehrl //
+% created_on:: 2015-07-31 //
+%
+% disclaimer:: Without warranty of any kind. //
+
+%% 
+% <../../../index.html Home> <../../index.html Index>
+% <http://validator.w3.org/check?uri=referer Validate> <../../../disclaimer.html Disclaimer>
