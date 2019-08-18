@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Lernnotizen Chinesisch</title>
+<!-- 2017-03-06 Mon 13:16 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="T. Wöhrl" />
+<link rel="stylesheet" type="text/css" href="/theme.css"/>
+</head>
+<body>
+<div id="org-div-home-and-up">
+<a href="/">Home</a> <a href="./">Index</a>
+</div><div id="content">
+<h1 class="title">Lernnotizen Chinesisch</h1>
+<script type="text/javascript">
+//<![CDATA[
+function myFunction() {
+  // Source: https://www.w3schools.com/howto/howto_js_filter_table.asp [2017-02-23]
+  // Declare variables 
+  var input, filter, table, tr, td, i, ul, li, a, h4, span, orgul, p;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  //table = document.getElementById("myTable");
+  tr = document.getElementsByTagName("tr");
+li = document.getElementsByTagName('li');
+h2 = document.getElementsByTagName('h2');
+orgul = document.getElementsByClassName('org-ul');
+p = document.getElementsByTagName('p');
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0]; 
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    } 
+  }
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < orgul.length; i++) {
+    a = orgul[i].getElementsByTagName("li")[0];
+    if (a) {
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        orgul[i].style.display = "";
+      } else {
+        orgul[i].style.display = "none";
+      }
+    } 
+  }
+
+ // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < p.length; i++) {
+   
+      if (p[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+        p[i].style.display = "";
+      } else {
+        p[i].style.display = "none";
+      }
+    }
+
+  // Loop through all h2 headlines, and hide those who don't match the search query
+  for (i = 0; i < h2.length; i++) {
+    span = h2[i].getElementsByTagName("span")[0];
+    if (span) {
+      if (span.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        h2[i].style.display = "";
+      } else {
+        h2[i].style.display = "inline";
+       // h2[i].setAttribute("style", "font-size: smaller;display: inline"); // Multiple style properties
+      }
+    } 
+  }
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+//]]>
+</script>
+
+<div class="abstract">
+<p>
+nicht-korregierte, willkürlich gruppierte und geordnete, unvollständige Sammlung von Wörtern, Phrasen und Sätzen
+</p>
+
+</div>
+
+<div><a>Filter: </a><input type="text" id="myInput" onkeyup="myFunction()"/></div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+</colgroup>
+
+<tbody>
+
+  <tr id="bib_ben03a"><td class="left">bla bla bla bla</br> 2019-10-20 a b c</td></tr>
+<tr id="bib_ben03a"><td class="left">bla bla bla bla sdfsd sdf</br> 2019-10-223 a b c</td></tr>
+<tr><td class="left">bla bla bla blasd sdf sdd</br> 2019-10-20 a b c</td></tr>
+<tr><td class="left">bla bla bla bla sdf </br> 2019-10-20 a b c</td></tr>
+<tr><td class="left">bla bla bla bla</br> 2019-10-20 a b c</td></tr>
+<tr><td class="left">bla bla bla bla</br> 2019-10-20 a b c</td></tr>
+</tbody>
+</table>
+
+
+
+<div id="org-whrl-ending"><hr/><a href="http://validator.w3.org/check?uri=referer">Validate</a> <a href="/disclaimer.html">Disclaimer</a> This page was last modified on 2017-03-06.</div>
+
+</body>
+</html>
